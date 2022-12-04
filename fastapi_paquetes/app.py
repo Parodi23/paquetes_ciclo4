@@ -33,7 +33,7 @@ class PyObjectId(ObjectId):
 
     @classmethod 
     def __modify_schema__(cls, field_schema): 
-        field_schema.update(type="string")#modificado
+        field_schema.update(type="string, i")#modificado
 
 
 class EnviosModel(BaseModel):
