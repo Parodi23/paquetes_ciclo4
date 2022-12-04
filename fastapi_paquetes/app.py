@@ -17,7 +17,6 @@ app = FastAPI(title = "GestionPaquete",
 MONGODB_URL ='mongodb+srv://Paolaandrearodriguez:Paola201095@cluster0.dzdu5vo.mongodb.net/test'
 client = motor.motor_asyncio.AsyncIOMotorClient(MONGODB_URL)
 db = client.GestionPaquetes
-
    
 
 class PyObjectId(ObjectId):
@@ -33,7 +32,7 @@ class PyObjectId(ObjectId):
 
     @classmethod 
     def __modify_schema__(cls, field_schema): 
-        field_schema.update(type="string, i")#modificado
+        field_schema.update(type="string, int")#modificado
 
 
 class EnviosModel(BaseModel):
