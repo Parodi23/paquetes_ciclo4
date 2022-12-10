@@ -16,22 +16,47 @@ body
   justify-content: center;
   align-items: center;
 }
+.body_3
+{
+  margin-left: 600px;
+  
+  
+}
 .body-inicio
 {
   padding: 10px; 
   padding-bottom: 30px; 
   padding-top: 30px;
-  margin-left: 1%; 
+  margin-left: 3%; 
+  margin-right: 2%;
+  border-radius: 20px;
+  box-shadow: 0 0 8px #00000047;
+  background-color: white;
+  align-items: center;
+
+}
+.body-inicio-adicional
+{
+  padding: 0px; 
+  padding-bottom: 30px; 
+  padding-top: 20px;
+  margin-top: 2%;
+  margin-left: 3%; 
   margin-right: 2%;
   border-radius: 20px;
   box-shadow: 0 0 8px #00000047;
   background-color: white;
 }
+.estilo
+{
+  align-content: center;
+  justify-content: center;
+}
 body:before
 {
     content: "";
     width: 105%;
-    min-height: 100vh;
+    min-height: 130vh;
     position: absolute;
     top: 0;
     left: 0;
