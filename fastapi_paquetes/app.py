@@ -7,11 +7,20 @@ from pydantic import BaseModel, Field, EmailStr
 from bson import ObjectId 
 from typing import Optional, List 
 import motor.motor_asyncio
+from fastapi.middleware.cors import CORSMiddleware
 
 
 app = FastAPI(title = "GestionPaquete",
               description="FastAPI de sistema de gestión de Paquetes",
               version="1.0.1") #() se coloca instacia
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 MONGODB_URL ='mongodb+srv://Paolaandrearodriguez:Paola201095@cluster0.dzdu5vo.mongodb.net/test'
